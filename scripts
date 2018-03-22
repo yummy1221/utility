@@ -1,0 +1,43 @@
+# gclone
+
+git clone git@bbgithub.dev.bloomberg.com:bidx/$1.git
+
+#vif
+#!/bin/bash                                                                                                                                                                                                                      
+                                                                                
+files=(*$1*)                                                                    
+                                                                                
+i=0                                                                             
+for filename in ${files[*]}; do                                                 
+    echo $i: $filename                                                          
+    i=`expr $i + 1`                                                             
+done                                                                            
+                                                                                
+read input_var                                                                  
+                                                                                
+read -a arr <<<$input_var                                                       
+                                                                                
+echo vim ${files[${arr[0]}]}                                                    
+vim ${files[${arr[0]}]}
+
+
+# push
+
+#!/bin/bash                                                                                                                                                                                                                      
+                                                                                
+current=`git rev-parse --abbrev-ref HEAD`                                       
+                                                                                
+git checkout master                                                             
+git pull origin master                                                          
+git checkout $current                                                           
+git rebase -i master 
+
+# vilast
+
+#!/bin/bash                                                                                                                                                                                                                      
+                                                                                
+lsCmd="ls -tr *${1}*"                                                           
+#echo $( eval "${lsCmd}" | tail -1 )                                            
+lastFile=$( eval "${lsCmd}" | tail -1 )                                         
+echo "open file" ${lastFile}                                                    
+vim ${lastFile}
