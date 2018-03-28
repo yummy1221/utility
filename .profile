@@ -10,11 +10,7 @@ set -o emacs    # emacs style command line mode (default)
 alias eclipse_wizard.py=/home/pshepher/bin/eclipse_wizard.py
 alias ls="ls --color=auto"
 alias vi=vim
-alias pl="plink *.mk"
-alias plc="plink *.mk clean"
-alias tsk=./*.tsk
 
-alias lstsk="ls -l *.tsk"
 alias bbpy=/bb/bin/bbpy
 
 alias ll="ls -alF"
@@ -62,20 +58,6 @@ DEFAULTPROMPT='$HOSTNAME $USER:\W\$ '
 export PS1="$GREEN $DEFAULTPROMPT $RESET> "
 
 
-# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-# Things related to typhoon
-
-# export DISTRIBUTION_REFROOT=/home/xli548/mbig/dev/dpkg_build/refroot/amd64/
-export PATH=$PATH:/home/xli548/scripts:/bb/bin/bidxcdbscript/
-
-alias sc="cd ~/scripts"
-alias arcdiff="arc diff --reviewers dsrihari,mliu231,skhatri,xli3,fchen169,jkraus16,tlui12,lhuang origin/master"
-alias fx="cd ~/mbig/bidxfx"
-alias rmlog="rm -rf out.log*"
-alias lslog="ls out.log*"
-alias l="ls *{h,cpp}"
-alias tsrc="cd ~/mbig/typhoon/typhoon/src"
-alias src="cd /home/xli548/mbig/bidxfx/bidxfx/src"
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Things related to mbig
@@ -139,9 +121,3 @@ esac
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 alias format="clang-format -i -style=file"
 
-# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-# related to build service
-# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-alias build="rm debian/bidxiqsv.build-stamp debian/substvars; time locum /opt/swt/bin/gmake -f debian/rules build"
-alias clean="locum /opt/swt/bin/gmake -f debian/rules clean"
-alias rmtime="rm -f debian/*stamp"
