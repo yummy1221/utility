@@ -41,3 +41,28 @@ lsCmd="ls -tr *${1}*"
 lastFile=$( eval "${lsCmd}" | tail -1 )                                         
 echo "open file" ${lastFile}                                                    
 vim ${lastFile}
+
+
+
+# ssh withouth entering password each time
+
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+require "sys/ioctl.ph";
+
+my $host = shift;
+my $home = $ENV{HOME};
+my $user = $ENV{USER};
+my $gw = 'v5devgateway.bdns.bloomberg.com';
+my $port = 22;
+my $ctrl = $home.'/.ssh/'.$user.'@'.$gw.':'.$port;
+
+print "$host $home $user $gw $port $ctrl\n";
+
+exec('/usr/bin/env', 'ssh',
+     '-oControlMaster=auto',
+     '-oControlPath='.$ctrl,
+     '-oControlPersist=yes',
+     '-t', '-X', '-p'.$port,  $gw, $host ? "inline $host" : ())
