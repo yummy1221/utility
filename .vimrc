@@ -31,6 +31,7 @@ set t_Co=256
 set cul
 " set cursorline
 hi CursorLine term=none cterm=none ctermbg=5
+" hi CursorLine term=none cterm=none ctermbg=7 " This line for Mac
 
 " to show match for parenthesis
 set showmatch
