@@ -1,0 +1,9 @@
+#!/opt/bb/bin/bash                                                                 
+ROBO_FOLDER=/bb/build/Linux-x86_64-64/release/robolibs                             
+                                                                                   
+ALL_TAGS="$(find $ROBO_FOLDER -maxdepth 1 -type l -print | sort | sed 's/.*\///')"
+                                                                                   
+for t in $ALL_TAGS; do  \                                                                                                                                      
+    ver="$(readlink $ROBO_FOLDER/$t | awk '{print "/"$$1}' | sed -n 's/.*\///p')";
+    printf '%-20s %-100s\n' "[$t]" $ver                                            
+done
