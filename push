@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+current=`git branch | grep \* | cut -d ' ' -f2`
+git checkout master
+git pull
+git checkout $current
+git rebase -i master
