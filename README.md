@@ -32,3 +32,6 @@
 - OneNote (AppStore)
 - word/excel/powerpoint office 365 (AppStore) (taobao)
 - 1password
+
+## IntelliJ Plugins
+- GitLink
