@@ -20,6 +20,9 @@ export PATH=$HOME/scripts:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 #export PATH=$JAVA_HOME/bin:$PATH
 
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# oh-my-zsh related
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/xiaoyi_li/.oh-my-zsh"
 

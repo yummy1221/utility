@@ -5,14 +5,21 @@
 - install vim
 - Update .vimrc
 - Update startup profile
-  - .profile
-  - Mac .bash_profile
+  - .zshrc
+  - .profile (deprecated)
+  - Mac .bash_profile (deprecated)
   - Ubuntu .bashrc
 
 
 ## Coding/Development Related
 - Sublime
 - iTerm
+
+### iTerm Setup
+- Install oh-my-zsh(https://ohmyz.sh/)
+- copy `agnoster.zsh-theme`
+- install powerline font for iTerm2 to show git status reference(https://gist.github.com/DukeNgn/9312a65e1535b3b1bffd9fed2c892079)
+- load iTerm2 profile
 
 
 ## My Personal Computer Software List
