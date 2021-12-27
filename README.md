@@ -5,14 +5,18 @@
 - install vim
 - Update .vimrc
 - Update startup profile
-  - .profile
-  - Mac .bash_profile
+  - .zshrc
+  - .profile (deprecated)
+  - Mac .bash_profile (deprecated)
   - Ubuntu .bashrc
 
 
 ## Coding/Development Related
 - Sublime
 - iTerm
+
+### iTerm Setup
+- Install oh-my-zsh(https://ohmyz.sh/)
 
 
 ## My Personal Computer Software List
