@@ -16,11 +16,15 @@
 - iTerm
 
 ### iTerm Setup
-- Install oh-my-zsh(https://ohmyz.sh/)
+- Install oh-my-zsh(https://ohmyz.sh/), [reference](https://medium.com/@elviocavalcante/5-steps-to-improve-your-terminal-appearance-on-mac-osx-f58b20058c84)
 - copy `agnoster.zsh-theme`
-- install powerline font for iTerm2 to show git status reference(https://gist.github.com/DukeNgn/9312a65e1535b3b1bffd9fed2c892079)
+- install powerline font for iTerm2 to show git status [reference](https://github.com/powerline/fonts/tree/master/SourceCodePro)
 - load iTerm2 profile
 
+## Installation List for Company Software
+- 1password
+- Alfred 5 Powerpack
+- 
 
 ## My Personal Computer Software List
 - Chrome

@@ -120,5 +120,3 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 runtime macros/matchit.vim
-
-

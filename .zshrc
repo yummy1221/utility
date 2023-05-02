@@ -24,7 +24,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 # oh-my-zsh related
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/xiaoyi_li/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # background theme related
